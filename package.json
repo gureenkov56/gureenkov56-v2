@@ -1,0 +1,23 @@
+{
+  "name": "blog-v2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gureenkov Nikita",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon server.js",
+    "dev": "cross-env NODE_ENV=development concurrently \"yarn run server\" \"yarn run frontend\" ",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "front": "yarn --cwd frontend run dev ",
+    "front:install": "yarn --cwd frontend install",
+    "front:generate": "yarn --cwd frontend run generate"
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
