@@ -7,13 +7,12 @@
 
     <h2>Данные получены от сервера:</h2>
     <ul>
-      <li 
-        v-for="(item, idx) in list"
-        :key="idx"
-      >
+      <li v-for="(item, idx) in list" :key="idx">
         {{ item }}
       </li>
     </ul>
+    <h1>COUNTER: {{ counter }}</h1>
+    <button @click="counter++">+1</button>
   </div>
 </template>
 
@@ -25,11 +24,10 @@ export default defineComponent({
   name: 'Tutorial',
   setup() {
     const list = ref([])
+    const counter = ref(5)
 
     onMounted(() => {
-      axios
-        .get('/api/list')
-        .then((res) => (list.value = res.data))
+      axios.get('/api/list').then((res) => (list.value = res.data))
       // fetch('/list')
       //   .then(data => data.json())
       //   .then(data => list.value = data);
@@ -37,6 +35,7 @@ export default defineComponent({
 
     return {
       list,
+      counter,
     }
   },
 })
