@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background: green url('../static/images/windowsXP/windows-wallpaper.jpeg') no-repeat center;
+    background-size: cover;
+}

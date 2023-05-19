@@ -9,3 +9,7 @@ export default Vue.extend({
   name: 'IndexPage',
 })
 </script>
+
+<style>
+@import url('../styles/windowsXP.scss');
+</style>
