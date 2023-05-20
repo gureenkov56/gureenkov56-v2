@@ -1,6 +1,6 @@
 <template>
     <div id='XPBottomBarTabs'>
-        tabs
+        <!-- here tabs -->
     </div>
 </template>
 
