@@ -1,16 +1,25 @@
 <template>
   <div id="XPBottomBar">
     <XPStartButton />
+    <XPBottomBarTabs />
+    <XPBottomBarRightMenu />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import XPStartButton from './XPStartButton.vue';
+import XPBottomBarRightMenu from './XPBottomBarRightMenu.vue';
+import XPBottomBarTabs from './XPBottomBarTabs.vue'
+
 
 export default defineComponent({
-    name: "XPXPBottomBar",
-    components: { XPStartButton }
+  name: "XPXPBottomBar",
+  components: {
+    XPStartButton,
+    XPBottomBarRightMenu,
+    XPBottomBarTabs
+  }
 })
 </script>
 
@@ -26,5 +35,8 @@ export default defineComponent({
       rgba(80, 126, 237, 1) 7%,
       rgba(31, 88, 193, 1) 22%,
       rgb(69, 120, 230) 100%);
+
+  display: flex;
+  gap: 10px;
 }
 </style>
