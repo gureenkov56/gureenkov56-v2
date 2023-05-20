@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4577ED url('~/static/images/windowsXP/windows-wallpaper.jpeg') no-repeat center;
+    background-size: cover;
+
+    height: 100vh;
+    overflow: hidden;
+
+    font-family: "Open Sans", sans-serif;
+}
