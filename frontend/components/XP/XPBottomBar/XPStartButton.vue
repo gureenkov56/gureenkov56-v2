@@ -1,6 +1,6 @@
 <template>
     <button id="StartButton" @click="$emit('click')">
-        <img src="~/static/images/windowsXP/xp-start-btn-icon.png" alt="start">
+        <img src="~/static/images/windowsXP/XPIcons/xp-start-btn-icon.png" alt="start">
         <span>start</span>
     </button>
 </template>

@@ -1,0 +1,44 @@
+#XPBottomBarTabs {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+
+    .tab {
+        height: 25px;
+        color: white;
+        background-color: rgba(255,255,255, 0.1);
+        
+        max-width: 180px;
+        flex: 1;
+        
+        border-radius: 4px;
+        box-shadow: 0px 0px 3px 1px #2852a7;
+        font-size: .8rem;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        >img {
+            padding: 0 5px;
+        }
+
+        &.active {
+            background: rgba($color: #000000, $alpha: 0.1);
+            box-shadow: inset 2px 2px 2px rgb(22, 64, 147);
+        }
+
+        &:hover {
+            filter: brightness(1.2);
+        }
+
+        span {
+            @media screen and (max-width: 370px) {
+                display: none;
+            }
+        }
+    }
+}
